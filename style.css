@@ -5,9 +5,9 @@
 
 html,
 body {
-    
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
 }
 
 main {
@@ -17,48 +17,47 @@ main {
     background-position: center;
     background-size: cover;
     position: relative;
-    background: url('./pacote-d013/imagens/fundo-madeira.jpg') center center fixed;
+    background: url('./pacote-d013/imagens/fundo-madeira.jpg') top center fixed;
     background-size: cover;
 }
+
 .celular {
-    height: 650px;
-    width: 500px;
+    height: 620px;
+    width: 355px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: aqua;
     background: url("./pacote-d013/imagens/frame-iphone.png") center center no-repeat fixed;
-}
-
-.tela-celular{
-    background-color: rgba(255, 0, 0, 0.295);
-    height: 475px;
-    width: 270px;
-    position: absolute;
-    top: 14%;
-    left: 23%;
-    background-size: contain;
-    border-radius: 5px;
+    
 }
 
 iframe{
-    height: 475px;
-    width: 270px;
+    height: 470px;
+    width: 268px;
     position: absolute;
-    top: 14%;
-    left: 23%;
+    top: 12.3%;
+    left: 12.3%;
     background-color: black;
+    border-radius: 10px;
 }
 
 img{
     border-radius: 50%;
-    height: 80px;
-    margin: 13px 10px;
-    box-shadow: 0 0 10px black;
+    width: 50px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.336);
+    box-sizing: border-box;
 }
 
 li{
     text-align: right;
 }
 
-
+img:hover{
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0);
+    transform: translate(-3px, -3px);
+    border: 2px solid rgb(255, 255, 255);
+    transition: all 0.7s ease-in-out;
+}
